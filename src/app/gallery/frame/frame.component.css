@@ -1,0 +1,23 @@
+div, input {
+    padding: 20px;
+    width: 60vw;
+}
+
+button {
+    padding: 20px;
+}
+.container {
+    width: 80vw;
+    height: auto;
+    background-color: aqua;
+    border: 2px black solid;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+#edit {
+    width: 90vw;
+}

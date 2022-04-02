@@ -1,0 +1,8 @@
+<!-- <ng-template (click)="toggleEdit()" #text>{{ photo.blog }}</ng-template>
+<div *ngIf="!edit; else text">
+  <input type="text" (change)="editText()" />
+</div> -->
+<div class="container">
+<div *ngIf="!edit; else editting" (click)="toggleEdit()">{{ photo.blog }}</div>
+<ng-template #editting><div id="edit"><input type="text" (change)="editText($event)" value={{photo.blog}} /><button (click)="toggleEdit()">SAVE</button><button (click)="delete()">X</button></div></ng-template>
+</div>
